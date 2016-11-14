@@ -1,12 +1,10 @@
 class Robot
+  attr_reader :name
+
   def initialize
     reset
   end
-
-  def name
-    @name
-  end
-
+  
   def reset
     @name = ""
     prng = Random.new
