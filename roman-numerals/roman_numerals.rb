@@ -19,9 +19,9 @@ class Fixnum
     output = ""
     remainder = self
     while remainder > 0
-      number_hash.each do |n, s|
-        output << number_hash[n] * (remainder/n).numerator if (remainder/n).numerator > 0
-        remainder = remainder.modulo(n)
+      number_hash.each do |n, roman|
+        output << roman * (remainder/n) if (remainder/n) > 0
+        remainder = remainder % n
       end
     end
     output
