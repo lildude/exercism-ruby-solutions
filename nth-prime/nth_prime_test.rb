@@ -12,22 +12,22 @@ class NthPrimeTest < Minitest::Test
   end
 
   def test_second_prime
-    skip
+    #skip
     assert_equal 3, Prime.nth(2)
   end
 
   def test_sixth_prime
-    skip
+    #skip
     assert_equal 13, Prime.nth(6)
   end
 
   def test_big_prime
-    skip
+    #skip
     assert_equal 104743, Prime.nth(10001)
   end
 
   def test_there_is_no_zeroth_prime
-    skip
+    #skip
     assert_raises(ArgumentError) { Prime.nth(0) }
   end
 
@@ -49,7 +49,7 @@ class NthPrimeTest < Minitest::Test
   # http://ruby-doc.org/docs/ruby-doc-bundle/UsersGuide/rg/constants.html
 
   def test_bookkeeping
-    skip
+    #skip
     assert_equal 1, BookKeeping::VERSION
   end
 end
