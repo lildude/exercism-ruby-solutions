@@ -4,7 +4,7 @@ class RunLengthEncoding
   end
 
   def self.decode str
-    str.scan(/[0-9]*[\D]/).flat_map { |c| c.length > 1 ? c[-1]*c.chop.to_i : c }.join
+    str.gsub(/(\d+)(\D)/) {$2 * $1.to_i}
   end
 end
 
