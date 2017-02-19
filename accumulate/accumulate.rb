@@ -1,10 +1,6 @@
 class Array
   def accumulate
-    result = []
-    self.each do |operation|
-      result.push yield operation
-    end
-    result
+    self.each.inject([]) {|result, operation| result << yield(operation)}
   end
 end
 
