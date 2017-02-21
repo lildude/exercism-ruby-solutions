@@ -10,3 +10,5 @@ class SumOfMultiples
     multiples.sum
   end
 end
+
+# Great solution: http://exercism.io/submissions/44849506c5aa4af5b43245bb48c8ef6e
