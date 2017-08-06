@@ -1,0 +1,13 @@
+AllCops:
+  TargetRubyVersion: 2.4.0
+  DisplayCopNames: true
+  DisplayStyleGuide: true
+  ExtraDetails: true
+  Exclude:
+    - '**/*_test.rb'
+
+Style/Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
